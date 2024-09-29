@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALMAS Company</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf5e6; /* Light golden yellow background */
+        }
+
+        /* Welcome screen */
+        #welcome {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffd700; /* Golden yellow background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: white;
+            z-index: 1000;
+            transition: opacity 1.25s ease-in-out;
+        }
+
+        /* Horizontal bar */
+        .horizontal-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #ffd700; /* Golden yellow */
+            display: flex;
+            justify-content: center; /* Center the text */
+            align-items: center;
+            padding: 0 20px;
+            z-index: 999;
+        }
+        .image-bar {
+            width: 50vh;
+            height: 50vh; /* Half the viewport height */
+            background-color: #ffd700; /* Golden yellow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main content */
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        /* About Us section */
+        #about h2 {
+            font-size: 2.5em; /* Larger heading */
+        }
+
+        #about img {
+
+            width: 100%;
+            height: 50vh; /* Half the viewport height */
+            background-color: #ffd700; /* Golden yellow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Our Services section */
+        #services h2 {
+            font-size: 2em;
+            background-color: #ffd700; /* Golden yellow */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service-item {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px); /* 3 items per row on PC */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .service-item img {
+            width: 50vmin;
+            height: 50vmin;
+        }
+
+        .service-item a {
+            display: block;
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .service-item {
+                flex: 1 1 100%; /* 1 item per row on mobile */
+            }
+        }
+
+        /* Contact Us section */
+        #contact {
+            background-color: #ffd700; /* Golden yellow */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2em;
+        }
+
+        #contact p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome screen -->
+    <div id="welcome">Welcome to HALMAS Company</div>
+
+    <!-- Horizontal bar -->
+    <div class="horizontal-bar">
+        <div>HALMAS Company</div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <div><img src="helmas.jpg" alt="About Us Image"></div>
+            <p>Welcome to Helmas Company, a dynamic and multifaceted enterprise based in Tanzania. We specialize in a diverse array of services, 
+                including construction, real estate, cleaning services, food products manufacturing, pest control,
+                 hair and beauty treatments,
+                 civil engineering, ICT (computer repairs), and landscaping. 
+                Our unwavering commitment to excellence and customer satisfaction has earned us a reputation as a trusted industry leader. 
+                Explore our comprehensive solutions designed to meet your needs and exceed your expectations. 
+                <!-- Add the link to the image here --></p>
+        </div>
+        <div id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-item">
+                    <!-- Add the link to the image here -->
+                    <img src="ict2.jpg" alt="Service Image">
+                    <!-- Add the link to the service here -->
+                    <a href="ict.html">Computer Repairs & Peripheral Environment</a>
+                </div>
+                <div class="service-item">
+                    <img src="hiar1.jpg" alt="Service Image">
+                    <a href="hair.html">Hair Dressing & Beauty Treatments</a>
+                </div>
+                <div class="service-item">
+                    <img src="food2.jpg" alt="Service Image">
+                    <a href="food.html">Food Products Manufacture</a>
+                </div>
+                <div class="service-item">
+                    <img src="civil.jpg" alt="Service Image">
+                    <a href="construction.html">Construction</a>
+                </div>
+                <div class="service-item">
+                    <img src="clean3.jpg" alt="Service Image">
+                    <a href="cleaning.html">Cleaning Services</a>
+                </div>
+                <div class="service-item">
+                    <img src="landscape1.jpg" alt="Service Image">
+                    <a href="landscaping.html">Landscaping Services</a>
+                </div>
+                <div class="service-item">
+                    <img src="pest2.jpg" alt="Service Image">
+                    <a href="pets.html">Fumigation & Pest Control</a>
+                </div>
+                <div class="service-item">
+                    <img src="construction2.jpg" alt="Service Image">
+                    <a href="civil.html">Civil Engineering</a>
+                </div>
+                <div class="service-item">
+                    <img src="real estate1.jpg" alt="Service Image">
+                    <a href="REAL ESTATE.html">Real Estate</a>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us section -->
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <pre>Phone: +255 719 906 935
+                +255 616 200 497
+                +255 752 885 706
+                +255 689 915 215
+            </pre>
+        </div>
+    </div>
+
+    <script>
+        // Function to hide the welcome screen after 1.25 seconds
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('welcome').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('welcome').style.display = 'none';
+                }, 1250);
+            }, 1250);
+        }
+    </script>
+</body>
+</html>
